@@ -1,0 +1,35 @@
+GET http://localhost:8082/
+###
+GET http://localhost:8082/currency
+###
+GET http://localhost:8082/users
+Authorization: LetmeIn
+
+###
+POST http://localhost:8082/blogs
+Content-Type: application/json
+
+{
+    "title" : "ksdjfskd",
+    "author" : ["sdvdfjkj"],
+    "content" : "7 dead body in vdvillage",
+    "publishedAt" : null
+}
+
+
+###
+Get http://localhost:8082/blogs
+
+###
+Get http://localhost:8082/blogs/66e92a5afb11c187ec17eb5e
+
+###
+DELETE  http://localhost:8082/blogs/66e4391b0a752813c528b530
+
+###
+PATCH  http://localhost:8082/blogs/66e8fd21dc0a0790f5969191
+Content-Type: application/json
+
+{
+    "title": "today tadak"
+}
